@@ -33,7 +33,7 @@ import Viewfaq from './pages.jsx/Faq/viewfaq'
 import Addwhychoose from './pages.jsx/Why_Choose_Us/addwhychoose'
 import Viewtestimonial from './pages.jsx/Testimonial/viewtestimonial'
 import Login from './pages.jsx/Login/Login';
-import ContextFile from './common/comancontesxt.jsx';
+import ContextFile from './common/comancontesxt';
 import MainAdmin from './Main_Router/MainAdmin';
 import Addmeterial from './pages.jsx/Meterial/Addmeterial';
 import ViewMeterial from './pages.jsx/Meterial/Viewmetarial';
