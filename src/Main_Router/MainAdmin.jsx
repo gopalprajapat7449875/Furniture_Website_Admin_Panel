@@ -1,10 +1,10 @@
 
 import React, { useContext } from 'react'
-import Sidebar from '../common.jsx/Sidebar'
-import Header from '../common.jsx/Header'
-import Footer from '../common.jsx/footer'
+import Sidebar from '../common/Sidebar'
+import Header from '../common/Header'
+import Footer from '../common/footer'
 import { Outlet } from 'react-router-dom'
-import { CartApi } from '../common.jsx/comancontesxt'
+import { CartApi } from '../common/comancontesxt'
 
 export default function MainAdmin() {
 
