@@ -1,6 +1,6 @@
 
 import React, { useContext, useEffect, useState } from 'react'
-import { CartApi } from '../../common.jsx/comancontesxt'
+import { CartApi } from '../../common/comancontesxt'
 import { useNavigate } from 'react-router-dom'
 import { toast, ToastContainer } from 'react-toastify'
 import axios from 'axios'
