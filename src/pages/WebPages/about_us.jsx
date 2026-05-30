@@ -41,7 +41,7 @@ export default function About_us() {
     let comonydata = new FormData(e.target)
 
 
-    if (data?.length == 0) {
+    if (!data._AboutHero) {
      e.preventDefault()
   
   
