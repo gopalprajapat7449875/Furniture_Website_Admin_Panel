@@ -45,8 +45,8 @@ export default function CompanyProfile() {
         if (final._status) {
           setcumdata(final.componydata)
           setpath(final._path)
-          dispath(logoMainPath(final._path))
-          dispath(logopath(final.componydata._logoimg))
+          dispath(logoMainPath(final?._path))
+          dispath(logopath(final.componydata?._logoimg))
         }
         else {
           toast.error(final._Message)
@@ -149,7 +149,7 @@ export default function CompanyProfile() {
               <div className="flex items-center gap-6">
                 <label className="cursor-pointer">
                   <img
-                    src={path + comdata._logoimg}
+                    src={path + comdata?._logoimg}
                     className="w-32 h-25 rounded  object-fit"
                   />
                   <input
@@ -162,55 +162,55 @@ export default function CompanyProfile() {
 
               <div className="grid md:grid-cols-3 gap-4">
 
-                <input defaultValue={comdata._ComponyName} name="_ComponyName" type="text" placeholder="Company Name" className="input" />
-                <input defaultValue={comdata._ComponyEmail} name="_ComponyEmail" type="email" placeholder="Email" className="input" />
-                <input defaultValue={comdata._ComponyPhoneNumber} name="_ComponyPhoneNumber" type="tel" placeholder="Phone" className="input" />
+                <input defaultValue={comdata?._ComponyName} name="_ComponyName" type="text" placeholder="Company Name" className="input" />
+                <input defaultValue={comdata?._ComponyEmail} name="_ComponyEmail" type="email" placeholder="Email" className="input" />
+                <input defaultValue={comdata?._ComponyPhoneNumber} name="_ComponyPhoneNumber" type="tel" placeholder="Phone" className="input" />
 
-                <input defaultValue={comdata._ComponyAlterPhoneNumber} name="_ComponyAlterPhoneNumber" type="text" placeholder="Alternate Phone" className="input" />
-                <input defaultValue={comdata._ComponyWebsite} name="_ComponyWebsite" type="text" placeholder="Website" className="input" />
-                <input defaultValue={comdata._ComponyGSTnumber} name="_ComponyGSTnumber" type="text" placeholder="GST Number" className="input" />
+                <input defaultValue={comdata?._ComponyAlterPhoneNumber} name="_ComponyAlterPhoneNumber" type="text" placeholder="Alternate Phone" className="input" />
+                <input defaultValue={comdata?._ComponyWebsite} name="_ComponyWebsite" type="text" placeholder="Website" className="input" />
+                <input defaultValue={comdata?._ComponyGSTnumber} name="_ComponyGSTnumber" type="text" placeholder="GST Number" className="input" />
 
-                <input defaultValue={comdata._ComponyCINnumber} name="_ComponyCINnumber" type="text" placeholder="CIN Number" className="input" />
-                <input defaultValue={comdata._ComponyPANnumber} name="_ComponyPANnumber" type="text" placeholder="PAN Number" className="input" />
-                <input defaultValue={comdata._ComponyFoundedYear} name="_ComponyFoundedYear" type="text" placeholder="Founded Year" className="input" />
+                <input defaultValue={comdata?._ComponyCINnumber} name="_ComponyCINnumber" type="text" placeholder="CIN Number" className="input" />
+                <input defaultValue={comdata?._ComponyPANnumber} name="_ComponyPANnumber" type="text" placeholder="PAN Number" className="input" />
+                <input defaultValue={comdata?._ComponyFoundedYear} name="_ComponyFoundedYear" type="text" placeholder="Founded Year" className="input" />
 
-                <input defaultValue={comdata._ComponyCountry} name="_ComponyCountry" type="text" placeholder="Country" className="input" />
-                <input defaultValue={comdata._ComponyState} name="_ComponyState" type="text" placeholder="State" className="input" />
-                <input defaultValue={comdata._ComponyCity} name="_ComponyCity" type="text" placeholder="City" className="input" />
+                <input defaultValue={comdata?._ComponyCountry} name="_ComponyCountry" type="text" placeholder="Country" className="input" />
+                <input defaultValue={comdata?._ComponyState} name="_ComponyState" type="text" placeholder="State" className="input" />
+                <input defaultValue={comdata?._ComponyCity} name="_ComponyCity" type="text" placeholder="City" className="input" />
 
-                <input defaultValue={comdata._ComponyPinCode} name="_ComponyPinCode" type="text" placeholder="Pincode" className="input" />
-                <input defaultValue={comdata._ComponyType} name="_ComponyType" type="text" placeholder="Industry Type" className="input" />
+                <input defaultValue={comdata?._ComponyPinCode} name="_ComponyPinCode" type="text" placeholder="Pincode" className="input" />
+                <input defaultValue={comdata?._ComponyType} name="_ComponyType" type="text" placeholder="Industry Type" className="input" />
 
 
 
-                <input defaultValue={comdata._ComponyInstagram} name="_ComponyInstagram" type="text" placeholder="Instagram" className="input" />
-                <input defaultValue={comdata._Componyfacebook} name="_Componyfacebook" type="text" placeholder="facebook" className="input" />
-                <input defaultValue={comdata._Componylinkdin} name="_Componylinkdin" type="text" placeholder="linkdin" className="input" />
+                <input defaultValue={comdata?._ComponyInstagram} name="_ComponyInstagram" type="text" placeholder="Instagram" className="input" />
+                <input defaultValue={comdata?._Componyfacebook} name="_Componyfacebook" type="text" placeholder="facebook" className="input" />
+                <input defaultValue={comdata?._Componylinkdin} name="_Componylinkdin" type="text" placeholder="linkdin" className="input" />
 
-                <input defaultValue={comdata._Componytwiter} name="_Componytwiter" type="text" placeholder="twiter" className="input" />
-                <input defaultValue={comdata._Componyyoutube} name="_Componyyoutube" type="text" placeholder="youtube" className="input" />
-                <input defaultValue={comdata._ComponyMap} name="_ComponyMap" type="text" placeholder="Map" className="input" />
-  <input defaultValue={comdata._Componyteligram} name="_Componyteligram" type="text" placeholder="Teligram" className="input" />
+                <input defaultValue={comdata?._Componytwiter} name="_Componytwiter" type="text" placeholder="twiter" className="input" />
+                <input defaultValue={comdata?._Componyyoutube} name="_Componyyoutube" type="text" placeholder="youtube" className="input" />
+                <input defaultValue={comdata?._ComponyMap} name="_ComponyMap" type="text" placeholder="Map" className="input" />
+  <input defaultValue={comdata?._Componyteligram} name="_Componyteligram" type="text" placeholder="Teligram" className="input" />
 
                 
 
 
-                <input defaultValue={comdata._ComponySize} name="_ComponySize" type="text" placeholder="Company Size" className="input" />
+                <input defaultValue={comdata?._ComponySize} name="_ComponySize" type="text" placeholder="Company Size" className="input" />
 
-                <input defaultValue={comdata._ComponyOfferCoupan} name="_ComponyOfferCoupan" type="text" placeholder="Coupan" className="input" />
-                <input defaultValue={comdata._ComponyDisOffer} name="_ComponyDisOffer" type="number" placeholder="Discount Offer" className="input" />
+                <input defaultValue={comdata?._ComponyOfferCoupan} name="_ComponyOfferCoupan" type="text" placeholder="Coupan" className="input" />
+                <input defaultValue={comdata?._ComponyDisOffer} name="_ComponyDisOffer" type="number" placeholder="Discount Offer" className="input" />
 
               </div>
 
               <textarea
-                defaultValue={comdata._ComponyFullAddrese}
+                defaultValue={comdata?._ComponyFullAddrese}
                 name="_ComponyFullAddrese"
                 placeholder="Full Address"
                 className="w-full input"
               />
 
               <textarea
-                defaultValue={comdata._ComponyDiscription}
+                defaultValue={comdata?._ComponyDiscription}
                 name="_ComponyDiscription"
                 placeholder="Company Description"
                 className="w-full input"
