@@ -65,7 +65,7 @@ export default function CompanyProfile() {
     let comonydata = new FormData(e.target)
 
 
-    if (comdata?.length == 1) {
+    if (!comdata) {
       axios.post(`${apibaseurl}admin/componycreate`, comonydata)
         .then((res) => res.data)
         .then((final) => {
