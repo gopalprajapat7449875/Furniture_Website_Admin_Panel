@@ -79,7 +79,7 @@ export default function CompanyProfile() {
         })
     }
     else {
-      axios.post(`${apibaseurl}admin/update/${comdata._id}`, comonydata)
+      axios.post(`${apibaseurl}admin/update/${comdata?._id}`, comonydata)
         .then((res) => res.data)
         .then((final) => {
           if (final._status) {
