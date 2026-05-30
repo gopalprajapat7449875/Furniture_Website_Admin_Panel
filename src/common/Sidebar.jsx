@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { MdDashboard } from 'react-icons/md'
-import { Navlist } from './Navlist'
+import { Navlist } from './Navlist.jsx'
 import { FaAngleDown, FaAngleUp } from 'react-icons/fa'
 import { BiRadioCircleMarked } from 'react-icons/bi'
 import { Link } from 'react-router-dom'
