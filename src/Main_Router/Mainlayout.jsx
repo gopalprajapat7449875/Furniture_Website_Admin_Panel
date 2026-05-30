@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
-import Sidebar from '../common.jsx/Sidebar'
-import Header from '../common.jsx/Header'
-import Footer from '../common.jsx/footer'
+import Sidebar from '../common/Sidebar.jsx'
+import Header from '../common/Header.jsx'
+import Footer from '../common/footer.jsx'
 import { Outlet, useNavigate } from 'react-router-dom'
 
 import { CartApi } from '../common/comancontesxt.jsx'
