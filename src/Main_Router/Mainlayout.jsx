@@ -4,7 +4,7 @@ import Header from '../common.jsx/Header'
 import Footer from '../common.jsx/footer'
 import { Outlet, useNavigate } from 'react-router-dom'
 
-import { CartApi } from '../common.jsx/comancontesxt'
+import { CartApi } from '../common/comancontesxt.jsx'
 import MainAdmin from './MainAdmin'
 
 export default function Mainlayout() {
