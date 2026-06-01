@@ -6,7 +6,7 @@ import { toast, ToastContainer } from 'react-toastify'
 export default function Addfaq() {
   let navigete = useNavigate()
   let AddFaq = (e) => {
-
+let apibaseurl = import.meta.env.VITE_APIBASEURL
     e.preventDefault()
     let obj = {
       _FaqQuestion: e.target._Question.value,
@@ -15,7 +15,7 @@ export default function Addfaq() {
       _FaqStatus: e.target._Status.value,
 
     }
-    axios.post(`http://localhost:8000/admin/faq/create`, obj)
+    axios.post(`${apibaseurl}faq/create`, obj)
       .then((res) => res.data)
       .then((finalres) => {
 
