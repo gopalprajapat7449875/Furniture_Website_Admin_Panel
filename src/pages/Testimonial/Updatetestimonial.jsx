@@ -100,7 +100,7 @@ export default function Updateatestimonial() {
                                 <div className='flex flex-col mx-2 my-4 gap-2 text-[18px ] font-bold'>
 
                                     <label htmlFor="Name" > Name </label>
-                                    <input name='_TestimonialName' type="text" placeholder='Enter full Name ' className='w-xl px-2 py-2 border border-violet-300 bg-white outline-none rounded' />
+                                    <input defaultValue={single?._TestimonialName} name='_TestimonialName' type="text" placeholder='Enter full Name ' className='w-xl px-2 py-2 border border-violet-300 bg-white outline-none rounded' />
                                 </div>
 
 
@@ -112,16 +112,16 @@ export default function Updateatestimonial() {
 
                                 <div className='flex flex-col mx-2 my-4 gap-2 text-[18px ] font-bold'>
                                     <label htmlFor="Name" > Rating </label>
-                                    <input defaultValue={single?._TestimonialRating}  name='_TestimonialRating' type="number" placeholder='Enter rating ' className='w-xl px-2 py-2 border border-violet-300 bg-white outline-none rounded' />
+                                    <input defaultValue={single?._TestimonialRating} name='_TestimonialRating' type="number" placeholder='Enter rating ' className='w-xl px-2 py-2 border border-violet-300 bg-white outline-none rounded' />
                                 </div>
 
                                 <div className='flex flex-col mx-2 my-4 gap-2 text-[18px ] font-bold'>
                                     <label htmlFor="Name" > Order </label>
-                                    <input defaultValue={single?._TestimonialOrder}  name='_TestimonialOrder' type="number" placeholder='Enter order ' className='w-xl px-2 py-2 border border-violet-300 bg-white outline-none rounded' />
+                                    <input defaultValue={single?._TestimonialOrder} name='_TestimonialOrder' type="number" placeholder='Enter order ' className='w-xl px-2 py-2 border border-violet-300 bg-white outline-none rounded' />
                                 </div>
                                 <div className='flex flex-col mx-2 my-4 gap-2 text-[18px ] font-bold'>
                                     <label htmlFor="Name" > Discrition </label>
-                                    <textarea defaultValue={single?._TestimonialAbout}  name='_TestimonialAbout' type="text" className='w-[575px]  px-2 py-2 border border-violet-300 bg-white outline-none rounded' ></textarea>
+                                    <textarea defaultValue={single?._TestimonialAbout} name='_TestimonialAbout' type="text" className='w-[575px]  px-2 py-2 border border-violet-300 bg-white outline-none rounded' ></textarea>
                                 </div>
 
 
@@ -133,21 +133,21 @@ export default function Updateatestimonial() {
                             </div>
 
 
-                           <div className='col-span-1 h-300 pe-5  relative  my-5'>
+                            <div className='col-span-1 h-300 pe-5  relative  my-5'>
 
                                 <img className=' h-80 w-full  absolute z-10 hover:z-0' src={path + single?._image} alt="" />
-                                <div>
-                                    <input
-                                        type="file"
-                                        name='_image'
-                                        className="hello hover:absolute hover:z-10"
-                                        data-height="300"
-                                        data-allowed-file-extensions="jpg png jpeg webp"
+
+                                <input
+                                    type="file"
+                                    name='_image'
+                                    className="hello "
+                                    data-height="300"
+                                    data-allowed-file-extensions="jpg png jpeg webp"
 
 
-                                    />
+                                />
 
-                                </div>
+
 
                             </div>
 
