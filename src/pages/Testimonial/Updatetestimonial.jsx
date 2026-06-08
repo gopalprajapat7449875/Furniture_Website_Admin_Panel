@@ -140,7 +140,7 @@ export default function Updateatestimonial() {
                                     <input
                                         type="file"
                                         name='_image'
-                                        className="hello "
+                                        className="hello hover:absolute hover:z-10"
                                         data-height="300"
                                         data-allowed-file-extensions="jpg png jpeg webp"
 
